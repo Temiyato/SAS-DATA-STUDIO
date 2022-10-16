@@ -1,0 +1,13 @@
+/* uploading the Russian-Ukraine War dataset into Data Studio */
+
+options validvarname=v7;
+libname WAR xlsx "/home/u61779917/INPUT/Russian-Ukraine War.xlsx";
+
+proc contents data=WAR.equipments;
+run;
+
+proc contents data=WAR.personnel;
+run;
+
+/* its a good practise to clear the libname always */
+libname WAR clear;
