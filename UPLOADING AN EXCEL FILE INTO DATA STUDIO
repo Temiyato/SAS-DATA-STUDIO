@@ -9,5 +9,5 @@ run;
 proc contents data=WAR.personnel;
 run;
 
-/* its a good practise to clear the libname always */
+/* its a good practise to clear the libref always */
 libname WAR clear;
